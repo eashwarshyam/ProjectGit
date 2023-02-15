@@ -1,6 +1,6 @@
 Feature: Automation Assignment
 Scenario: Print all the sub-menus
-    Given Launch the Application
-    When Click on Electronics
-    And Mouse hover Electronics
-    Then Print the Data
+    Given Launch The Application
+    When Click On Electronics
+    And Mouse Hover Electronics
+    Then Print The Data
