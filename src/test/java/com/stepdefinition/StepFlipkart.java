@@ -16,14 +16,14 @@ public class StepFlipkart extends BaseClassMets{
 	public static WebDriver driver = RunnerFlipkart.driver;
 	PageObjectManager pom = new PageObjectManager(driver);
 	
-	@Given("Launch the application")
+	@Given("Launch the Application")
 	public void launch_the_application() throws IOException {
 	    String loc = FileReaderManager.getInstance().getCrInstance().getUrl();
 	    websitelaunch(loc);
 	    System.out.println("Flipkart Launch");
 	}
 	
-	@When("Click on electronics")
+	@When("Click on Electronics")
 	public void click_on_electronics() {
 	    xpathClickWeb(pom.getLp().getCloseWindow());
 	    System.out.println("********Close window********");
@@ -31,13 +31,13 @@ public class StepFlipkart extends BaseClassMets{
 	    System.out.println("*****Click Electronics******");
 	}
 	
-	@When("Mouse hover electronics")
+	@When("Mouse hover Electronics")
 	public void mouse_hover_electronics() {
 		mouseHoverWeb(pom.getLp().getMousehover());
 		System.out.println("***Mouse Hover to Mobiles***");
 	}
 	
-	@Then("Print the data")
+	@Then("Print the Data")
 	public void print_the_data() {
 		getWebText(pom.getLp().getTextPrint());
 		System.out.println("*****Print Mobiles List*****");
